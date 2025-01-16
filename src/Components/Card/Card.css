@@ -1,0 +1,21 @@
+.mainLayout{
+    justify-content: center;
+}
+
+.cardBox{
+    justify-content: center;
+    text-align: center;
+    border-radius: 5%;
+    background-color: #1A1B21;
+}
+
+.cardBox > img {
+    width: 317px;
+    height: 317px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.fullName{
+    color: #D1D5DB;
+}
