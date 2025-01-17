@@ -12,22 +12,35 @@ export default function Card() {
   return (
     <main className="mainLayout">
       <div className="cardBox">
-        <img src={profilePicture} alt="Profile Picture" />
+        <img src={profilePicture} alt="Mazen Rashad" />
         <div className="mainInfo">
           <span className="fullName">Mazen Rashad</span>
           <span className="occupation">MERN Stack Developer</span>
-          <a className="businessEmail">mazenrashadd@gmail.com</a>
+          <a
+            className="businessEmail"
+            href="mailto: mazenrashadd@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            mazenrashadd@gmail.com
+          </a>
         </div>
         <div className="contactButtonsSection">
-          <button className="githubButton">
-            <FontAwesomeIcon
-              icon={faSquareGithub}
-              style={{ color: "#1E1F26", marginRight: "9px" }}
-            />
-            GitHub
-          </button>
           <a
-            href="https://www.google.com"
+            href="https://github.com/mazenrashaddd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="githubButton">
+              <FontAwesomeIcon
+                icon={faSquareGithub}
+                style={{ color: "#1E1F26", marginRight: "9px" }}
+              />
+              GitHub
+            </button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mazenrashad/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -59,25 +72,41 @@ export default function Card() {
         </div>
         <div className="footerSection">
           <a href="" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon className="fontAwesomeIcon"
+            <FontAwesomeIcon
+              className="fontAwesomeIcon"
               icon={faLinkedin}
               style={{ fontSize: "35px", color: "#918E9B" }}
             />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon className="fontAwesomeIcon"
+          <a
+            href="https://github.com/mazenrashaddd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className="fontAwesomeIcon"
               icon={faSquareGithub}
               style={{ fontSize: "35px", color: "#918E9B" }}
             />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon className="fontAwesomeIcon"
+          <a
+            href="mailto:mazenrashadd@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className="fontAwesomeIcon"
               icon={faSquareEnvelope}
               style={{ fontSize: "35px", color: "#918E9B" }}
             />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon className="DiscordfontAwesomeIcon"
+          <a
+            href="https://www.discordapp.com/users/712058478419640320"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className="DiscordfontAwesomeIcon"
               icon={faDiscord}
               style={{
                 fontSize: "22px",
@@ -85,7 +114,7 @@ export default function Card() {
                 color: "#161619",
                 borderRadius: "4px",
                 padding: "4px 3px",
-                marginLeft: "-1px"
+                marginLeft: "-1px",
               }}
             />
           </a>
