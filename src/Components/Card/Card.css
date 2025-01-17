@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 764px; */
+  max-height: 700px;
   padding: 20px 0px;
 }
 
