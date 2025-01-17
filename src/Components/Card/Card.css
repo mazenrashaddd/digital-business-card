@@ -1,21 +1,155 @@
-.mainLayout{
-    justify-content: center;
+body {
+  font-family: Inter, sans-serif;
 }
 
-.cardBox{
-    justify-content: center;
-    text-align: center;
-    border-radius: 5%;
-    background-color: #1A1B21;
+.mainLayout {
+  justify-content: center;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 5% 5% 3% 3%;
+  background-color: #1a1b21;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .cardBox > img {
-    width: 317px;
-    height: 317px;
-    object-fit: cover;
-    border-radius: 5%;
+  width: 317px;
+  height: 260px;
+  object-position: 0px -15px;
+  object-fit: cover;
+  border-radius: 5% 5% 0% 0%;
 }
 
-.fullName{
-    color: #D1D5DB;
+.fullName {
+  color: #d1d5db;
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 3px;
+}
+
+.occupation {
+  color: #f3bf99;
+  font-size: 18px;
+}
+
+.businessEmail {
+  display: block;
+  color: #f5f5f5;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+.contactButtonsSection {
+  display: flex;
+  justify-content: center;
+  column-gap: 18px;
+  margin-bottom: 12px;
+}
+
+.linkedInButton {
+  background-color: #0468da;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 7px 8px;
+  border-radius: 6px;
+  border: none;
+}
+.linkedInButton:hover{
+ background-color: #034ea3;
+ cursor: pointer;
+}
+
+.githubButton {
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 7px 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.githubButton:hover{
+  background-color: #b9b9b9;
+  cursor: pointer;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  text-align: start;
+  margin-bottom: 0px;
+}
+
+.aboutSection > span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-top: 10px;
+}
+
+.aboutSection > p {
+  color: #dcdcdc;
+  width: 250px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+.interestsSection{
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.interestsSection > span{
+  font-size: 20px;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-top: 8px;
+}
+
+.interestsSection > p {
+  color: #dcdcdc;
+  width: 250px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+.footerSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #161619;
+}
+
+.fontAwesomeIcon:hover{
+ color: #505050 !important;
+}
+
+.DiscordfontAwesomeIcon:hover{
+  background-color: #505050 !important;
 }
