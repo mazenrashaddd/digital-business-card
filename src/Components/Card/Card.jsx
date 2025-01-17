@@ -8,26 +8,26 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import profilePicture from "../../assets/images/Mazen Rashad.png";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <main className="mainLayout">
       <div className="cardBox">
         <img src={profilePicture} alt="Mazen Rashad" />
         <div className="mainInfo">
-          <span className="fullName">Mazen Rashad</span>
-          <span className="occupation">MERN Stack Developer</span>
+          <span className="fullName">{props.fullName}</span>
+          <span className="occupation">{props.occupation}</span>
           <a
             className="businessEmail"
-            href="mailto: mazenrashadd@gmail.com"
+            href={`mailto:${props.email}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            mazenrashadd@gmail.com
+            {props.email}
           </a>
         </div>
         <div className="contactButtonsSection">
           <a
-            href="https://github.com/mazenrashaddd"
+            href={props.githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -40,7 +40,7 @@ export default function Card() {
             </button>
           </a>
           <a
-            href="https://www.linkedin.com/in/mazenrashad/"
+            href={props.linkedinLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,23 +56,18 @@ export default function Card() {
         <div className="aboutSection">
           <span>About</span>
           <p>
-            I am a MERN Stack Developer passionate about creating efficient
-            solutions and automating workflows. I prioritize security, follow
-            best practices, and am always eager to explore and learn new
-            technologies.
+            {props.aboutParagraph}
           </p>
         </div>
         <div className="interestsSection">
           <span>Interests</span>
           <p>
-            MERN Stack Developer. AI enthusiast. Problem solver. Tech explorer.
-            Automation advocate. React wizard. Data science learner. Car guy.
-            Music head.
+            {props.interestsParagraph}
           </p>
         </div>
         <div className="footerSection">
           <a
-            href="https://www.linkedin.com/in/mazenrashad/"
+            href={props.linkedinLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -83,7 +78,7 @@ export default function Card() {
             />
           </a>
           <a
-            href="https://github.com/mazenrashaddd"
+            href={props.githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -94,7 +89,7 @@ export default function Card() {
             />
           </a>
           <a
-            href="mailto:mazenrashadd@gmail.com"
+            href={`mailto:${props.email}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -105,7 +100,7 @@ export default function Card() {
             />
           </a>
           <a
-            href="https://www.discordapp.com/users/712058478419640320"
+            href={props.discordLink}
             target="_blank"
             rel="noopener noreferrer"
           >
