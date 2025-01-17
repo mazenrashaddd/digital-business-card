@@ -71,7 +71,11 @@ export default function Card() {
           </p>
         </div>
         <div className="footerSection">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/mazenrashad/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               className="fontAwesomeIcon"
               icon={faLinkedin}
